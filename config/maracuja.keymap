@@ -166,9 +166,9 @@
 
     second_layer {
       bindings = <
-   &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0         &kp K_VOL_UP &kp NUMBER_7   &kp NUMBER_8   &kp NUMBER_9    &kp PLUS        
-   &out OUT_BLE &none        &none        &none        &none                &kp K_PP     &kp NUMBER_4   &kp NUMBER_5   &kp NUMBER_6    &kp F11
-   &bt BT_CLR   &none        &none        &none        &none                &kp K_VOL_DN &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3    &kp F12
+   &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0         &kp KP_ASTERISK &kp NUMBER_7   &kp NUMBER_8   &kp NUMBER_9    &kp PLUS        
+   &out OUT_BLE &none        &none        &none        &none                &kp KP_SLASH    &kp NUMBER_4   &kp NUMBER_5   &kp NUMBER_6    &kp KP_MINUS
+   &bt BT_CLR   &none        &none        &none        &none                &kp K_VOL_DN.   &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3    &kp F12
                              &trans       &trans       &trans               &trans       &trans       &trans
       >;
     };
