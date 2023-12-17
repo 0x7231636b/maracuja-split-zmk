@@ -158,8 +158,8 @@
     first_layer {
       bindings = <
    &kp LG(Q)         &kp LG(W)        &hm LG(E)        &kp LG(R)       &kp LG(T)              &kp LG(Y)    &kp LG(U)  &kp LG(I)      &kp LG(O)       &kp LG(P)
-   &kp LG(A)         &kp DE_AMPSD     &kp DE_FSLH      &kp LG(F)       &kp LG(G)              &kp LG(H)    &kp LG(J)  &kp LG(K)      &kp LG(L)       &kp LG(SEMICOLON)
-   &kp LG(Z)         &kp (X)          &kp LG(C)        &kp LG(V)       &kp LG(B)              &kp LG(N)    &kp LG(M)  &kp LG(COMMA)  &kp LG(PERIOD)  &kp LG(SLASH)
+   &kp LG(A)         &kp LG(S)        &kp LG(D)        &kp LG(F)       &kp LG(G)              &kp LG(H)    &kp LG(J)  &kp LG(K)      &kp LG(L)       &kp LG(SEMICOLON)
+   &kp LG(Z)         &kp LG(X)        &kp LG(C)        &kp LG(V)       &kp LG(B)              &kp LG(N)    &kp LG(M)  &kp LG(COMMA)  &kp LG(PERIOD)  &kp LG(SLASH)
                                       &trans           &trans          &trans                 &trans       &trans    &trans
       >;
     };
