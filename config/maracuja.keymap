@@ -157,10 +157,10 @@
 
     first_layer {
       bindings = <
-   &kp LG(Q)         &kp LG(W)        &kp LG(E)        &kp LG(R)       &kp LG(T)              &kp LG(Y)    &kp LG(U)  &kp LG(I)      &kp LG(O)       &kp LG(P)
-   &kp LG(A)         &kp LG(S)        &kp LG(D)        &kp LG(F)       &kp LG(G)              &kp LG(H)    &kp LG(J)  &kp LG(K)      &kp LG(L)       &kp LG(SEMICOLON)
-   &kp LG(Z)         &mt LG(X) X      &kp LG(C)        &kp LG(V)       &kp LG(B)              &kp LG(N)    &kp LG(M)  &kp LG(COMMA)  &kp LG(PERIOD)  &kp LG(SLASH)
-                                      &trans           &trans          &trans                 &trans       &trans    &trans
+   &mt EXCLAMATION LG(Q)  &mt AT_SIGN LG(W)       &mt HASH LG(E)              &mt DOLLAR LG(R)             &mt PERCENT LG(T)              &mt CARET LG(Y)  &mt AMPERSAND LG(U)   &mt ASTERISK LG(I)     &mt X LG(O)             &mt X LG(P)
+   &mt LESS_THAN LG(A)    &mt GREATER_THAN LG(S)  &mt LEFT_PARENTHESIS LG(D)  &mt RIGHT_PARENTHESIS LG(F)  &mt X LG(G)                    &mt X LG(H)      &mt LEFT_BRACE LG(J)  &mt RIGHT_BRACE LG(K)  &mt LEFT_BRACKET LG(L)  &mt RIGHT_BRACKET LG(SEMICOLON)
+   &mt X LG(Z)            &mt X LG(X)             &mt X LG(C)                 &mt X LG(V)                  &mt X LG(B)                    &mt X LG(N)      &mt X LG(M)           &mt X LG(COMMA)        &mt X LG(PERIOD)        &mt BACKSLASH LG(SLASH)
+                                                  &trans                      &trans                       &trans                         &trans           &trans                &trans
       >;
     };
 
