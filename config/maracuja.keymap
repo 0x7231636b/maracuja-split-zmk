@@ -138,10 +138,15 @@
     default_layer {
       label = "Base";
       bindings = <
-   &mt GRAVE Q       &kp W   &kp E      &kp R        &kp T            &kp Y        &kp U         &kp I      &kp O      &kp P
-   &kp A             &kp S   &kp D      &kp F        &kp G            &kp H        &kp J         &kp K      &kp L      &kp SEMICOLON
-   &mt LEFT_SHIFT Z  &kp X   &kp C      &kp V        &kp B            &kp N        &kp M         &kp COMMA  &kp PERIOD &mt RIGHT_SHIFT SLASH
-                             MO_TOG(L3) &lt L1 DEL   &lt L2 BSPC      &lt L2 SPACE &lt L1 ENTER  MO_TOG(L3)
+      // ╭─────────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬───────────────────────╮
+           &mt GRAVE Q         &kp W         &kp E         &kp R        &kp T              &kp Y         &kp U          &kp I        &kp O         &kp P
+      // ├─────────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼───────────────────────┤
+           &kp A               &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L         &kp SEMICOLON
+      // ├─────────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼───────────────────────┤
+          &mt LEFT_SHIFT Z      &kp X         &kp C         &kp V         &kp B            &kp N        &kp M         &kp COMMA     &kp PERIOD   &mt RIGHT_SHIFT SLASH
+      // ├─────────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼───────────────────────┤
+                                            MO_TOG(L3)    &lt L1 DEL   &lt L2 BSPC      &lt L2 SPACE   &lt L1 ENTER  MO_TOG(L3)
+      //                                 ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
       >;
     };
 
@@ -156,11 +161,16 @@
     };
 
     first_layer {
-      bindings = <
-   &mt EXCLAMATION LG(Q)  &mt AT_SIGN LG(W)       &mt HASH LG(E)              &mt DOLLAR LG(R)             &mt PERCENT LG(T)              &mt CARET LG(Y)  &mt AMPERSAND LG(U)   &mt ASTERISK LG(I)     &mt X LG(O)             &mt X LG(P)
-   &mt LESS_THAN LG(A)    &mt GREATER_THAN LG(S)  &mt LEFT_PARENTHESIS LG(D)  &mt RIGHT_PARENTHESIS LG(F)  &mt UNDERSCORE LG(G)           &mt PIPE LG(H)   &mt LEFT_BRACE LG(J)  &mt RIGHT_BRACE LG(K)  &mt LEFT_BRACKET LG(L)  &mt RIGHT_BRACKET LG(SEMICOLON)
-   &mt X LG(Z)            &mt X LG(X)             &mt X LG(C)                 &mt X LG(V)                  &mt X LG(B)                    &mt X LG(N)      &mt X LG(M)           &mt X LG(COMMA)        &mt X LG(PERIOD)        &mt BACKSLASH LG(SLASH)
-                                                  &trans                      &kp LEFT_GUI                 &kp LG(BSPC)                   &kp LG(SPACE)    &kp LG(ENTER)         &trans
+      bindings = < 
+      // ╭───────────────────────┬────────────────────────┬────────────────────────────┬────────────────────────────┬─────────────────────╮   ╭─────────────────┬─────────────────────┬──────────────────────┬───────────────────────┬────────────────────────────────╮
+           &mt EXCLAMATION LG(Q)   &mt AT_SIGN LG(W)        &mt HASH LG(E)               &mt DOLLAR LG(R)             &mt PERCENT LG(T)         &mt CARET LG(Y)   &mt AMPERSAND LG(U)   &mt ASTERISK LG(I)     &mt X LG(O)             &mt X LG(P)
+      // ├───────────────────────┼────────────────────────┼────────────────────────────┼────────────────────────────┼─────────────────────┤   ├─────────────────┼─────────────────────┼──────────────────────┼───────────────────────┼────────────────────────────────┤
+           &mt LESS_THAN LG(A)     &mt GREATER_THAN LG(S)   &mt LEFT_PARENTHESIS LG(D)   &mt RIGHT_PARENTHESIS LG(F)  &mt UNDERSCORE LG(G)      &mt PIPE LG(H)    &mt LEFT_BRACE LG(J)  &mt RIGHT_BRACE LG(K)  &mt LEFT_BRACKET LG(L)  &mt RIGHT_BRACKET LG(SEMICOLON)
+      // ├───────────────────────┼────────────────────────┼────────────────────────────┼────────────────────────────┼─────────────────────┤   ├─────────────────┼─────────────────────┼──────────────────────┼───────────────────────┼────────────────────────────────┤
+           &mt X LG(Z)             &mt X LG(X)              &mt X LG(C)                  &mt X LG(V)                  &mt X LG(B)               &mt X LG(N)       &mt X LG(M)           &mt X LG(COMMA)        &mt X LG(PERIOD)        &mt BACKSLASH LG(SLASH)
+      // ├───────────────────────┼────────────────────────┼────────────────────────────┼────────────────────────────┼─────────────────────┤   ├─────────────────┼─────────────────────┼──────────────────────┼───────────────────────┼────────────────────────────────┤
+                                                            &trans                       &kp LEFT_GUI                 &kp LG(BSPC)              &kp LG(SPACE)     &kp LG(ENTER)         &trans
+      //                                                  ╰────────────────────────────┴────────────────────────────┴─────────────────────╯   ╰─────────────────┴─────────────────────┴──────────────────────╯
       >;
     };
 
@@ -175,9 +185,9 @@
 
     third_layer {
       bindings = <
-   &kp NUMBER_1  &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5         &kp NUMBER_6   &kp NUMBER_7  &kp UP   &kp NUMBER_9 &kp NUMBER_0
-   &none         &mkp RCLK    &mkp MCLK    &mkp LCLK    &none                &mkp MB4       &kp LEFT      &kp DOWN &kp RIGHT    &none  
-   &sys_reset    &bootloader  &none        &none        &none                &none          &none         &none    &bootloader  &sys_reset
+   &kp NUMBER_1     &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5         &kp NUMBER_6   &kp NUMBER_7  &kp UP      &kp NUMBER_9 &kp NUMBER_0
+   &none            &mkp RCLK    &mkp MCLK    &mkp LCLK    &none                &mkp MB4       &kp LEFT      &kp DOWN    &kp RIGHT    &none  
+   &kp LEFT_SHIFT   &bootloader  &sys_reset        &none        &none           &none          &none         &sys_reset  &bootloader  &kp RIGHT_SHIFT
                               &trans       &kp LEFT_GUI &kp LEFT_ALT         &kp RIGHT_ALT  &kp RIGHT_GUI  &trans
       >;
     };
