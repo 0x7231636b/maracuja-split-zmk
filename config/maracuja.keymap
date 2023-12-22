@@ -153,10 +153,15 @@
     mac_layer {
       label = "Mac Os";
       bindings = <
-   &trans     &trans   &hm LGUI E  &trans   &trans        &trans   &trans  &hm RGUI T  &trans  &trans
-   &hm LCTL A &trans   &trans      &trans   &trans        &trans   &trans  &trans      &trans  &hm RCTL S
-   &trans     &trans   &trans      &trans   &trans        &trans   &trans  &trans      &trans  &trans
-                       &trans      &trans   &trans        &trans   &trans  &trans
+      // ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭─────────────────┬───────────────┬──────────────┬────────────────┬──────────────╮
+           &trans         &trans         &hm LGUI E     &trans         &trans             &trans            &trans          &hm RGUI T     &trans           &trans
+      // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├─────────────────┼───────────────┼──────────────┼────────────────┼──────────────┤
+           &hm LCTL A     &trans         &trans         &trans         &trans             &trans            &trans          &trans         &trans           &hm RCTL S
+      // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├─────────────────┼───────────────┼──────────────┼────────────────┼──────────────┤
+           &trans         &trans         &trans         &trans         &trans             &trans            &trans          &trans         &trans           &trans
+      // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├─────────────────┼───────────────┼──────────────┼────────────────┼──────────────┤
+                                         &trans         &trans         &trans             &trans            &trans          &trans
+      //                               ╰──────────────┴──────────────┴──────────────╯   ╰─────────────────┴───────────────┴──────────────╯
       >;
     };
 
@@ -176,28 +181,43 @@
 
     second_layer {
       bindings = <
-   &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0         &kp KP_ASTERISK &kp NUMBER_7   &kp NUMBER_8   &kp NUMBER_9    &kp NUMBER_0        
-   &out OUT_BLE &none        &none        &none        &none                &kp KP_SLASH    &kp NUMBER_4   &kp NUMBER_5   &kp NUMBER_6    &kp KP_MINUS
-   &bt BT_CLR   &none        &none        &none        &none                &kp K_VOL_DN    &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3    &kp PLUS
-                             &trans       &kp LEFT_GUI &kp LEFT_ALT         &kp RIGHT_ALT   &kp RIGHT_GUI  &trans
+      // ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭─────────────────┬───────────────┬──────────────┬────────────────┬──────────────╮
+           &bt BT_SEL 4   &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0       &kp KP_ASTERISK   &kp NUMBER_7    &kp NUMBER_8   &kp NUMBER_9     &kp NUMBER_0
+      // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├─────────────────┼───────────────┼──────────────┼────────────────┼──────────────┤
+           &out OUT_BLE   &none          &none          &none          &none              &kp KP_SLASH      &kp NUMBER_4    &kp NUMBER_5   &kp NUMBER_6     &kp KP_MINUS
+      // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├─────────────────┼───────────────┼──────────────┼────────────────┼──────────────┤
+           &bt BT_CLR     &none          &none          &none          &none              &kp K_VOL_DN      &kp NUMBER_1    &kp NUMBER_2   &kp NUMBER_3     &kp PLUS
+      // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├─────────────────┼───────────────┼──────────────┼────────────────┼──────────────┤
+                                         &trans         &kp LEFT_GUI   &kp LEFT_ALT       &kp RIGHT_ALT     &kp RIGHT_GUI   &trans
+      //                               ╰──────────────┴──────────────┴──────────────╯   ╰─────────────────┴───────────────┴──────────────╯
       >;
     };
 
     third_layer {
       bindings = <
-   &kp NUMBER_1     &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5         &kp NUMBER_6   &kp NUMBER_7  &kp UP      &kp NUMBER_9 &kp NUMBER_0
-   &none            &mkp RCLK    &mkp MCLK    &mkp LCLK    &none                &mkp MB4       &kp LEFT      &kp DOWN    &kp RIGHT    &none  
-   &kp LEFT_SHIFT   &bootloader  &sys_reset        &none        &none           &none          &none         &sys_reset  &bootloader  &kp RIGHT_SHIFT
-                              &trans       &kp LEFT_GUI &kp LEFT_ALT         &kp RIGHT_ALT  &kp RIGHT_GUI  &trans
+      // ╭────────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭─────────────────┬───────────────┬──────────────┬────────────────┬─────────────────╮
+           &kp NUMBER_1     &kp NUMBER_2   &kp NUMBER_3   &kp NUMBER_4   &kp NUMBER_5       &kp NUMBER_6      &kp NUMBER_7    &kp UP         &kp NUMBER_9     &kp NUMBER_0
+      // ├────────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├─────────────────┼───────────────┼──────────────┼────────────────┼─────────────────┤
+           &none            &mkp RCLK      &mkp MCLK      &mkp LCLK      &none              &mkp MB4          &kp LEFT        &kp DOWN       &kp RIGHT        &none
+      // ├────────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├─────────────────┼───────────────┼──────────────┼────────────────┼─────────────────┤
+           &kp LEFT_SHIFT   &bootloader    &sys_reset     &none          &none              &none             &none           &sys_reset     &bootloader      &kp RIGHT_SHIFT
+      // ├────────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├─────────────────┼───────────────┼──────────────┼────────────────┼─────────────────┤
+                                           &trans         &kp LEFT_GUI   &kp LEFT_ALT       &kp RIGHT_ALT     &kp RIGHT_GUI   &trans
+      //                                 ╰──────────────┴──────────────┴──────────────╯   ╰─────────────────┴───────────────┴──────────────╯
       >;
     };
 
     fourth_layer {
       bindings = <
-   &bt BT_SEL 0      &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR       &none        &none        &none        &none        &none
-   &ext_power EP_ON  &none        &none        &bt BT_SEL 4 &bt BT_SEL 5     &none        &none        &none        &none        &none
-   &ext_power EP_OFF &none        &none        &none        &none            &none        &none        &none        &none        &none
-                                  &trans       &none        &none            &none        &none        &none
+      // ╭───────────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭───────────┬────────────┬────────────┬───────────┬────────────╮
+           &bt BT_SEL 0        &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_CLR         &none       &none        &none        &none       &none     
+      // ├───────────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├───────────┼────────────┼────────────┼───────────┼────────────┤
+           &ext_power EP_ON    &none          &none          &bt BT_SEL 4   &bt BT_SEL 5       &none       &none        &none        &none       &none     
+      // ├───────────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├───────────┼────────────┼────────────┼───────────┼────────────┤
+           &ext_power EP_OFF   &none          &none          &none          &none              &none       &none        &none        &none       &none     
+      // ├───────────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├───────────┼────────────┼────────────┼───────────┼────────────┤
+                                              &trans         &none          &none              &none       &none        &none     
+      //                                    ╰──────────────┴──────────────┴──────────────╯   ╰───────────┴────────────┴────────────╯
       >;
     };
 
