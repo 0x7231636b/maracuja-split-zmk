@@ -54,6 +54,13 @@
 
 #define MO_TOG(layer) &mo_tog layer layer   // Macro to apply momentary-layer-on-hold/toggle-layer-on-tap to a specific layer
 
+// German umlauts
+// https://github.com/urob/zmk-nodefree-config/blob/main/international_chars/german.dtsi
+ZMK_UNICODE_PAIR(   de_ae,      N0, N0,  E, N4,    N0, N0,  C, N4)
+ZMK_UNICODE_PAIR(   de_oe,      N0, N0,  F, N6,    N0, N0,  D, N6)
+ZMK_UNICODE_PAIR(   de_ue,      N0, N0,  F,  C,    N0, N0,  D,  C)
+ZMK_UNICODE_PAIR(de_eszett,     N0, N0,  D,  F,    N1, E,   N9, E)
+
 / {
 
   behaviors {
@@ -120,10 +127,10 @@
                ╰────────────╯  ╰────────────╯
     */
 
-    COMBO(auml, &kp AUML, 8 9, 0)
-    COMBO(ouml, &kp OUML, 18 19, 0)
-    COMBO(uuml, &kp UUML, 28 29, 0)
-    COMBO(szuml, &kp DE_SS, 7 8, 0)
+    COMBO(auml, &de_ae, 8 9, 0)
+    COMBO(ouml, &kp de_oe, 18 19, 0)
+    COMBO(uuml, &kp de_ue, 28 29, 0)
+    COMBO(szuml, &kp de_eszett, 7 8, 0)
     COMBO(caps_word, &caps_word, 13 16, 250)
     COMBO(esc, &kp ESC, 0 1, 0)
     COMBO(tab, &kp TAB, 10 11, 0)
