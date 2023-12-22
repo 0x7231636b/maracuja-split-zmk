@@ -125,7 +125,7 @@
     COMBO(uuml, &kp UUML, 12 13, 0)
     COMBO(szuml, &kp DE_SS, 17 19, 0)
     COMBO(caps_word, &caps_word, 13 16, 250)
-    COMBO(esc, &kp ESC, 1 2, 250)
+    COMBO(esc, &kp ESC, 0 1, 250)
     COMBO(tab, &kp TAB, 11 12, 250)
     COMBO(osx, &tog MAC, 1 24, 250)
     COMBO(numlock, &tog L1, 26 27 28, 250)
@@ -166,9 +166,9 @@
 
     second_layer {
       bindings = <
-   &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0         &kp KP_ASTERISK &kp NUMBER_7   &kp NUMBER_8   &kp NUMBER_9    &kp PLUS        
+   &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0         &kp KP_ASTERISK &kp NUMBER_7   &kp NUMBER_8   &kp NUMBER_9    &kp NUMBER_0        
    &out OUT_BLE &none        &none        &none        &none                &kp KP_SLASH    &kp NUMBER_4   &kp NUMBER_5   &kp NUMBER_6    &kp KP_MINUS
-   &bt BT_CLR   &none        &none        &none        &none                &kp K_VOL_DN    &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3    &kp F12
+   &bt BT_CLR   &none        &none        &none        &none                &kp K_VOL_DN    &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3    &kp PLUS
                              &trans       &kp LEFT_GUI &trans               &trans          &kp RIGHT_GUI  &trans
       >;
     };
