@@ -59,7 +59,44 @@
 #define MO_TOG(layer) &mo_tog layer layer   
 
 / {
-
+     macros {
+        auml: auml {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LEFT_ALT>
+                , <&macro_tap &de_ae>
+                , <&macro_release &kp LEFT_ALT>
+                ;
+        };
+        ouml: ouml {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LEFT_ALT>
+                , <&macro_tap &de_oe>
+                , <&macro_release &kp LEFT_ALT>
+                ;
+        };
+        uuml: uuml {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LEFT_ALT>
+                , <&macro_tap &de_ue>
+                , <&macro_release &kp LEFT_ALT>
+                ;
+        };
+        eszett: eszett {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LEFT_ALT>
+                , <&macro_tap &de_eszett>
+                , <&macro_release &kp LEFT_ALT>
+                ;
+        };
+    };
   behaviors {
     hm: homerow_mods {
         compatible = "zmk,behavior-hold-tap";
@@ -124,13 +161,13 @@
                ╰────────────╯  ╰────────────╯
     */
 
-    COMBO(auml, &de_ae, 8 9, 0)
-    COMBO(ouml, &de_oe, 18 19, 0)
-    COMBO(uuml, &de_ue, 28 29, 0)
-    COMBO(szuml, &de_eszett, 7 8, 0)
+    COMBO(auml, &auml, 8 9, 0)
+    COMBO(ouml, &ouml, 18 19, 0)
+    COMBO(uuml, &uuml, 28 29, 0)
+    COMBO(szuml, &eszett, 7 8, 0)
     COMBO(caps_word, &caps_word, 13 16, 250)
     COMBO(esc, &kp ESC, 0 1, 0)
-    COMBO(tab, &kp TAB, 10 11, 0)
+    COMBO(tab, &kp TAB, 10 11, 0)    
     COMBO(osx, &tog MAC, 1 24, 250)
     COMBO(numlock, &tog L1, 26 27 28, 250)
     
@@ -190,7 +227,7 @@
       // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├─────────────────┼───────────────┼──────────────┼────────────────┼──────────────┤
            &kp TAB        &none          &none          &none          &none              &kp KP_SLASH      &kp NUMBER_4    &kp NUMBER_5   &kp NUMBER_6     &kp KP_MINUS
       // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├─────────────────┼───────────────┼──────────────┼────────────────┼──────────────┤
-           &bt BT_CLR     &out OUT_BLE   &none          &none          &none              &kp K_VOL_DN      &kp NUMBER_1    &kp NUMBER_2   &kp NUMBER_3     &kp PLUS
+           &none          &none          &none          &none          &none              &kp K_VOL_DN      &kp NUMBER_1    &kp NUMBER_2   &kp NUMBER_3     &kp PLUS
       // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├─────────────────┼───────────────┼──────────────┼────────────────┼──────────────┤
                                          &trans         &kp LEFT_GUI   &kp LEFT_ALT       &kp RIGHT_ALT     &kp RIGHT_GUI   &trans
       //                               ╰──────────────┴──────────────┴──────────────╯   ╰─────────────────┴───────────────┴──────────────╯
