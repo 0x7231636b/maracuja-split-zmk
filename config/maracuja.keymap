@@ -64,36 +64,31 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LEFT_ALT>
-                , <&macro_tap &kp U &kp NUMBER_0 &kp NUMBER_0 &kp E &kp NUMBER_4 >
-                , <&macro_release &kp LEFT_ALT>
+                = <&macro_tap &kp LA(U) >
+                , <&macro_tap &kp A>
                 ;
         };
         ouml: ouml {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LEFT_ALT>
-                , <&macro_tap &de_oe>
-                , <&macro_release &kp LEFT_ALT>
+                = <&macro_tap &kp LA(U) >
+                , <&macro_tap &kp O>
                 ;
         };
         uuml: uuml {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LEFT_ALT>
-                , <&macro_tap &de_ue>
-                , <&macro_release &kp LEFT_ALT>
+                = <&macro_tap &kp LA(U) >
+                , <&macro_tap &kp >
                 ;
         };
         eszett: eszett {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LEFT_ALT>
-                , <&macro_tap &de_eszett>
-                , <&macro_release &kp LEFT_ALT>
+                = <&macro_press &kp LA(S) >
                 ;
         };
     };
@@ -222,15 +217,15 @@
 
     second_layer {
       bindings = <
-      // ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭─────────────────┬───────────────┬──────────────┬────────────────┬──────────────╮
-           &none          &none          &none          &none          &none              &kp KP_ASTERISK   &kp NUMBER_7    &kp NUMBER_8   &kp NUMBER_9     &kp NUMBER_0
-      // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├─────────────────┼───────────────┼──────────────┼────────────────┼──────────────┤
-           &kp TAB        &none          &none          &none          &none              &kp KP_SLASH      &kp NUMBER_4    &kp NUMBER_5   &kp NUMBER_6     &kp KP_MINUS
-      // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├─────────────────┼───────────────┼──────────────┼────────────────┼──────────────┤
-           &none          &none          &none          &none          &none              &kp K_VOL_DN      &kp NUMBER_1    &kp NUMBER_2   &kp NUMBER_3     &kp PLUS
-      // ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├─────────────────┼───────────────┼──────────────┼────────────────┼──────────────┤
-                                         &trans         &kp LEFT_GUI   &kp LEFT_ALT       &kp RIGHT_ALT     &kp RIGHT_GUI   &trans
-      //                               ╰──────────────┴──────────────┴──────────────╯   ╰─────────────────┴───────────────┴──────────────╯
+      // ╭────────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭─────────────────┬───────────────┬──────────────┬────────────────┬──────────────╮
+           &none            &none          &none          &none          &none              &kp KP_ASTERISK   &kp NUMBER_7    &kp NUMBER_8   &kp NUMBER_9     &kp NUMBER_0
+      // ├────────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├─────────────────┼───────────────┼──────────────┼────────────────┼──────────────┤
+           &kp TAB          &none          &none          &none          &none              &kp KP_SLASH      &kp NUMBER_4    &kp NUMBER_5   &kp NUMBER_6     &kp KP_MINUS
+      // ├────────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├─────────────────┼───────────────┼──────────────┼────────────────┼──────────────┤
+           &kp LEFT_SHIFT   &none          &none          &none          &none              &kp K_VOL_DN      &kp NUMBER_1    &kp NUMBER_2   &kp NUMBER_3     &kp PLUS
+      // ├────────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├─────────────────┼───────────────┼──────────────┼────────────────┼──────────────┤
+                                           &trans         &kp LEFT_GUI   &kp LEFT_ALT       &kp RIGHT_ALT     &kp RIGHT_GUI   &trans
+      //                                 ╰──────────────┴──────────────┴──────────────╯   ╰─────────────────┴───────────────┴──────────────╯
       >;
     };
 
