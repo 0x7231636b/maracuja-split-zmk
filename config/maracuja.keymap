@@ -204,7 +204,7 @@
     first_layer {
       bindings = < 
       // ╭───────────────────────┬────────────────────────┬────────────────────────────┬────────────────────────────┬─────────────────────╮   ╭─────────────────┬─────────────────────┬──────────────────────┬───────────────────────┬────────────────────────────────╮
-           &mt EXCLAMATION LG(Q)   &mt AT_SIGN LG(W)        &mt HASH LG(E)               &mt DOLLAR LG(R)             &mt PERCENT LG(T)         &mt CARET LG(Y)   &mt AMPERSAND LG(U)   &mt ASTERISK LG(I)     &mt X LG(O)             &mt X LG(P)
+           &mt EXCLAMATION LG(Q)   &mt AT_SIGN LG(W)        &mt HASH LG(E)               &mt DOLLAR LG(R)             &mt PERCENT LG(T)         &mt CARET LG(Y)   &mt AMPERSAND LG(U)   &mt ASTERISK LG(I)     &mt MINUS LG(O)             &mt EQUAL LG(P)
       // ├───────────────────────┼────────────────────────┼────────────────────────────┼────────────────────────────┼─────────────────────┤   ├─────────────────┼─────────────────────┼──────────────────────┼───────────────────────┼────────────────────────────────┤
            &mt LESS_THAN LG(A)     &mt GREATER_THAN LG(S)   &mt LEFT_PARENTHESIS LG(D)   &mt RIGHT_PARENTHESIS LG(F)  &mt UNDERSCORE LG(G)      &mt PIPE LG(H)    &mt LEFT_BRACE LG(J)  &mt RIGHT_BRACE LG(K)  &mt LEFT_BRACKET LG(L)  &mt RIGHT_BRACKET LG(SEMICOLON)
       // ├───────────────────────┼────────────────────────┼────────────────────────────┼────────────────────────────┼─────────────────────┤   ├─────────────────┼─────────────────────┼──────────────────────┼───────────────────────┼────────────────────────────────┤
