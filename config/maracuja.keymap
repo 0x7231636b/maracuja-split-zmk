@@ -47,11 +47,11 @@
 #define WHRML(k2,k3,k4) &ht LALT k2  &ht LGUI k3  &ht LCTRL k4
 #define WHRMR(k1,k2,k3) &ht RCTRL k1  &ht RGUI k2  &ht RALT k3
 
-&lt {
-    tapping-term-ms = <250>;
-    quick_tap_ms = <150>;
-    flavor = "tap-preferred";
-};
+//&lt {
+//    tapping-term-ms = <250>;
+//    quick_tap_ms = <150>;
+//    flavor = "tap-preferred";
+//};
 
 &caps_word {
     continue-list = <UNDERSCORE DE_MINS BSPC DELETE>;
