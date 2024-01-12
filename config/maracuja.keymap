@@ -169,7 +169,6 @@
     COMBO(esc, &kp ESC, 0 1, 0)
     COMBO(tab, &kp TAB, 10 11, 0)    
     COMBO(osx, &tog MAC, 1 24, 250)
-    COMBO(numlock, &tog L1, 26 27 28, 250)
     
   };
 
